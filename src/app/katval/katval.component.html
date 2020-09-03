@@ -1,0 +1,6 @@
+<h2>Kategóraválasztó</h2>
+<ul class="categories">
+  <li *ngFor="let k of kat" (click)="onSelect(k)">
+    <a routerLink="/display/{{k}}">{{k}}</a>
+  </li>
+</ul>

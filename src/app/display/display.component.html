@@ -1,0 +1,14 @@
+<nav>
+  <a [class.selected]="strlista === megje" (click)="changeDisp(strlista)">Lista</a>
+  <a [class.selected]="strgrid === megje" (click)="changeDisp(strgrid)">Grid</a>
+</nav>
+<div [ngSwitch]="megje">
+  <app-lista *ngSwitchCase="strlista" [kateg]="katg" [lista]="list"></app-lista>
+  <app-grid *ngSwitchCase="strgrid" [kateg]="katg" [lista]="list"></app-grid>
+  <app-lista *ngSwitchDefault [kateg]="katg" [lista]="list"></app-lista>
+</div>
+<div>
+  <nav>
+    <a routerLink="/katval">Kategóriaválasztó</a>
+  </nav>
+</div>
