@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "FoldrAdat"
+    }
+  },
+  "defaultProject": "FoldrAdat",
+  "cli": {
+    "analytics": false
+  }
 }
